@@ -6,9 +6,9 @@ body, h1, h2, h3, p, ul {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradient background */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradient background */
     overflow-x: hidden;
 }
 
@@ -16,8 +16,8 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    animation: slideIn 1s ease-in-out;
+    background: rgba(0, 0, 0, 0.8);
+    animation: slideInDown 1s ease-in-out;
 }
 
 nav ul {
@@ -26,7 +26,6 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-    animation: fadeIn 2s ease-in-out;
 }
 
 nav ul li {
@@ -34,17 +33,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffab00;
+    color: #f0f0f0;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
+    border-radius: 30px;
     transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background: #ffab00;
+    background: #ff9a00;
     color: #000;
-    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(255, 154, 0, 0.5);
 }
 
 /* Hero Section */
@@ -55,86 +55,153 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
     animation: fadeInLeft 2s ease-in-out;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
     animation: fadeInRight 2s ease-in-out;
 }
 
 /* Section Styling */
 section {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 40px 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    animation: slideIn 1s ease-in-out;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 60px 40px;
+    margin: 30px 0;
+    border-radius: 15px;
+    animation: slideInUp 1s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    border-bottom: 2px solid #ffab00;
-    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #ff6f00;
     margin-bottom: 20px;
-    animation: fadeInUp 1.5s ease-in-out;
+}
+
+p, ul {
+    font-size: 1.1rem;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-.experience-item, .project-item, .extra-item {
-    margin-bottom: 30px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-a {
-    color: #ffab00;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Photo Placeholder Styling */
 .photo-placeholder {
     width: 100%;
-    height: 200px;
-    background-color: #444;
+    height: 250px;
+    background-color: #333;
     text-align: center;
-    line-height: 200px;
+    line-height: 250px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
     animation: fadeInUp 1.5s ease-in-out;
 }
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
 }
 
 /* Animations */
-@keyframes slideIn {
+@keyframes slideInDown {
     from {
         transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
         opacity: 0;
     }
     to {
