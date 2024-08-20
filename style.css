@@ -8,7 +8,8 @@ body, h1, h2, h3, p, ul {
 body {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradient background */
+    background: url('https://source.unsplash.com/1920x1080/?technology,abstract') no-repeat center center fixed;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -16,7 +17,7 @@ body {
 header {
     padding: 20px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     animation: slideInDown 1s ease-in-out;
 }
 
@@ -58,34 +59,36 @@ nav ul li a:hover {
     font-size: 4rem;
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif;
+    color: #ff6f00;
     animation: fadeInLeft 2s ease-in-out;
 }
 
 .hero p {
     font-size: 1.8rem;
     font-weight: 300;
+    color: #fff;
     animation: fadeInRight 2s ease-in-out;
 }
 
 /* Section Styling */
-section {
-    background: rgba(0, 0, 0, 0.85);
+.section-background {
+    background: rgba(0, 0, 0, 0.8);
     padding: 60px 40px;
     margin: 30px 0;
     border-radius: 15px;
-    animation: slideInUp 1s ease-in-out;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: slideInUp 1.5s ease-in-out;
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
     font-size: 2.5rem;
-    color: #ff6f00;
     margin-bottom: 20px;
+    color: #ff6f00;
+    font-family: 'Raleway', sans-serif;
 }
 
 p, ul {
     font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 ul {
@@ -105,6 +108,21 @@ ul {
     margin-bottom: 20px;
     border-radius: 15px;
     animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Project and Extra-Curricular Item */
+.project-item, .extra-item {
+    margin-bottom: 20px;
+}
+
+.project-item a, .extra-item a {
+    color: #ff6f00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-item a:hover, .extra-item a:hover {
+    color: #e65c00;
 }
 
 /* Contact Form */
