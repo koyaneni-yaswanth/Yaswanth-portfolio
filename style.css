@@ -11,6 +11,7 @@ body {
     background: url('https://source.unsplash.com/1920x1080/?technology,abstract') no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 /* Header and Navigation */
@@ -52,6 +53,7 @@ nav ul li a:hover {
 .hero {
     margin-top: 50px;
     text-align: center;
+    color: #ffffff;
     animation: zoomIn 1.5s ease-in-out;
 }
 
@@ -71,7 +73,7 @@ nav ul li a:hover {
 }
 
 /* Section Styling */
-.section-background {
+section {
     background: rgba(0, 0, 0, 0.8);
     padding: 60px 40px;
     margin: 30px 0;
@@ -84,6 +86,8 @@ h2 {
     margin-bottom: 20px;
     color: #ff6f00;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 p, ul {
