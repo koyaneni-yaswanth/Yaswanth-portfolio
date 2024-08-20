@@ -5,7 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koyaneni Yaswanth | Robotics Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradient background */
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            animation: slideIn 1s ease-in-out;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #ffab00;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #ffab00;
+            color: #000;
+            border-radius: 5px;
+        }
+        .hero {
+            margin-top: 50px;
+            text-align: center;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            animation: fadeInLeft 2s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            animation: fadeInRight 2s ease-in-out;
+        }
+        section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            animation: slideIn 1s ease-in-out;
+        }
+        h2 {
+            border-bottom: 2px solid #ffab00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .experience-item, .project-item, .extra-item {
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        a {
+            color: #ffab00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .photo-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #444;
+            text-align: center;
+            line-height: 200px;
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        /* Keyframe Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,13 +187,13 @@
         </div>
     </header>
 
-    <section id="about" class="section-background">
+    <section id="about">
         <div class="photo-placeholder">Add About Me Photo Here</div>
         <h2>About Me</h2>
         <p>Hi, I’m Koyaneni Yaswanth, a passionate Robotics Engineer with a focus on autonomous navigation, robotics, and AI. I am currently pursuing a BTech in Metallurgical and Materials Engineering at VNIT, India.</p>
     </section>
 
-    <section id="experience" class="section-background">
+    <section id="experience">
         <h2>Experience</h2>
         <div class="photo-placeholder">Add Experience Photo Here</div>
         <div class="experience-item">
@@ -45,7 +206,7 @@
         </div>
     </section>
 
-    <section id="projects" class="section-background">
+    <section id="projects">
         <h2>Projects</h2>
         <div class="project-item">
             <div class="photo-placeholder">Add Project 1 Photo Here</div>
@@ -67,12 +228,12 @@
         </div>
     </section>
 
-    <section id="education" class="section-background">
+    <section id="education">
         <h2>Education</h2>
         <p>BTech in Metallurgical and Materials Engineering, <strong>Visvesvaraya National Institute of Technology (VNIT)</strong>, India <br>2022 - 2026</p>
     </section>
 
-    <section id="skills" class="section-background">
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li><strong>Programming Languages:</strong> C, C++, Python</li>
@@ -81,7 +242,7 @@
         </ul>
     </section>
 
-    <section id="extra-curricular" class="section-background">
+    <section id="extra-curricular">
         <h2>Extra-Curricular</h2>
         <div class="extra-item">
             <div class="photo-placeholder">Add Extra-Curricular Photo Here</div>
@@ -95,29 +256,17 @@
         </div>
     </section>
 
-    <section id="contact" class="section-background">
+    <section id="contact">
         <h2>Contact</h2>
         <div class="photo-placeholder">Add Contact Photo Here</div>
         <p>Email: <a href="mailto:koyaneniyaswanth@gmail.com">koyaneniyaswanth@gmail.com</a></p>
         <p>Phone: <a href="tel:+918074206162">8074206162</a></p>
         <p>GitHub: <a href="https://github.com/koyaneni-yaswanth" target="_blank">koyaneni-yaswanth</a></p>
-
-        <!-- Contact Form -->
-        <form action="#" method="post" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Koyaneni Yaswanth. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
