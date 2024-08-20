@@ -7,51 +7,68 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('background.jpg') no-repeat center center fixed; /* Background image */
-            background-size: cover;
-            color: #fff; /* White text for contrast */
+            color: #ffffff;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradient background */
+            overflow-x: hidden;
         }
         header {
-            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
             padding: 20px;
             text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            animation: slideIn 1s ease-in-out;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
         nav ul li {
             display: inline;
-            margin-right: 15px;
         }
         nav ul li a {
-            color: #fff;
+            color: #ffab00;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #ffab00;
+            color: #000;
+            border-radius: 5px;
         }
         .hero {
             margin-top: 50px;
+            text-align: center;
+            animation: zoomIn 1.5s ease-in-out;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 10px;
+            animation: fadeInLeft 2s ease-in-out;
         }
         .hero p {
             font-size: 1.5rem;
+            animation: fadeInRight 2s ease-in-out;
         }
         section {
-            background: rgba(0, 0, 0, 0.8); /* Darker section background */
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 20px;
             margin: 20px 0;
+            border-radius: 10px;
+            animation: slideIn 1s ease-in-out;
         }
         h2 {
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid #ffab00;
             padding-bottom: 10px;
             margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
         }
         ul {
             list-style: none;
@@ -62,6 +79,7 @@
         }
         .experience-item, .project-item, .extra-item {
             margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         a {
             color: #ffab00;
@@ -73,9 +91,9 @@
         footer {
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.5s ease-in-out;
         }
-        /* Photo placeholders */
         .photo-placeholder {
             width: 100%;
             height: 200px;
@@ -85,6 +103,68 @@
             color: #fff;
             font-size: 1.2rem;
             margin-bottom: 20px;
+            border-radius: 10px;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        /* Keyframe Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -108,14 +188,14 @@
     </header>
 
     <section id="about">
-        <div class="photo-placeholder">Add About Me Photo Here</div> <!-- Photo placeholder -->
+        <div class="photo-placeholder">Add About Me Photo Here</div>
         <h2>About Me</h2>
         <p>Hi, I’m Koyaneni Yaswanth, a passionate Robotics Engineer with a focus on autonomous navigation, robotics, and AI. I am currently pursuing a BTech in Metallurgical and Materials Engineering at VNIT, India.</p>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
-        <div class="photo-placeholder">Add Experience Photo Here</div> <!-- Photo placeholder -->
+        <div class="photo-placeholder">Add Experience Photo Here</div>
         <div class="experience-item">
             <h3>Summer Research Internship - IvLabs, India</h3>
             <p><strong>Dec 22 - Mar 23</strong></p>
@@ -129,7 +209,7 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-item">
-            <div class="photo-placeholder">Add Project 1 Photo Here</div> <!-- Photo placeholder -->
+            <div class="photo-placeholder">Add Project 1 Photo Here</div>
             <h3><a href="#">Design and Fabrication of Six-Wheeled Rover</a></h3>
             <p><strong>Dec 23 - Present</strong></p>
             <ul>
@@ -138,7 +218,7 @@
             </ul>
         </div>
         <div class="project-item">
-            <div class="photo-placeholder">Add Project 2 Photo Here</div> <!-- Photo placeholder -->
+            <div class="photo-placeholder">Add Project 2 Photo Here</div>
             <h3><a href="#">Omnidirectional-Mobile Manipulator</a></h3>
             <p><strong>Sep 23 - Feb 24</strong></p>
             <ul>
@@ -165,12 +245,12 @@
     <section id="extra-curricular">
         <h2>Extra-Curricular</h2>
         <div class="extra-item">
-            <div class="photo-placeholder">Add Extra-Curricular Photo Here</div> <!-- Photo placeholder -->
+            <div class="photo-placeholder">Add Extra-Curricular Photo Here</div>
             <h3>Member at IvLabs</h3>
             <p>Active member of the Robotics and AI community of VNIT, working in areas like Computer Vision, Localization, and Navigation.</p>
         </div>
         <div class="extra-item">
-            <div class="photo-placeholder">Add IEEE Workshop Photo Here</div> <!-- Photo placeholder -->
+            <div class="photo-placeholder">Add Extra-Curricular Photo Here</div>
             <h3>IEEE Workshop Organizer</h3>
             <p>Organized and participated in four robotics workshops with IEEE, serving as a volunteer and workshop leader.</p>
         </div>
@@ -178,6 +258,7 @@
 
     <section id="contact">
         <h2>Contact</h2>
+        <div class="photo-placeholder">Add Contact Photo Here</div>
         <p>Email: <a href="mailto:koyaneniyaswanth@gmail.com">koyaneniyaswanth@gmail.com</a></p>
         <p>Phone: <a href="tel:+918074206162">8074206162</a></p>
         <p>GitHub: <a href="https://github.com/koyaneni-yaswanth" target="_blank">koyaneni-yaswanth</a></p>
@@ -188,3 +269,4 @@
     </footer>
 </body>
 </html>
+
