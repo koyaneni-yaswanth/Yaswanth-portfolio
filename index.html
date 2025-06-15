@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koyaneni Yaswanth | Robotics Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #ffab00;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #ffab00;
+            color: #000;
+            border-radius: 5px;
+        }
+        .hero {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            border-bottom: 2px solid #ffab00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #ffab00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,7 +91,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#extra-curricular">Extra-Curricular</a></li>
+                <li><a href="#extra">Extra-Curricular</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -28,25 +103,24 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/photo%20portifolio.JPG" alt="About Me Photo" class="responsive-image">
-        <p>Hi, I’m Koyaneni Yaswanth, a passionate Robotics Engineer with a focus on autonomous navigation, robotics, and AI. I am currently pursuing a BTech in Metallurgical and Materials Engineering at VNIT, India.</p>
+        <p>Hi, I’m Koyaneni Yaswanth, a passionate Robotics Engineer with a strong background in autonomous navigation, wearable sensors, and AI-integrated robotic systems. I am currently pursuing a BTech in Metallurgical and Materials Engineering at VNIT, India.</p>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
         <div class="experience-item">
             <h3>International Research Internship - PSU, Thailand</h3>
-            <p><strong>May 25 - Present</strong></p>
+            <p><strong>May 25 – Present</strong></p>
             <ul>
-                <li>Focuses on the development of wearable sensors for health monitoring and intelligent systems.</li>
+                <li>Working on the development of wearable sensors for real-time health monitoring applications.</li>
             </ul>
         </div>
         <div class="experience-item">
             <h3>Summer Research Internship - IvLabs, India</h3>
-            <p><strong>Dec 22 - Mar 23</strong></p>
+            <p><strong>Dec 2022 – Mar 2023</strong></p>
             <ul>
-                <li>Developed autonomous navigation system using ArUco markers, OpenCV, and ROS on TurtleBot3.</li>
-                <li>Enabled real-time localization in unknown environments for warehouse, industrial, and healthcare robotics.</li>
+                <li>Developed an autonomous navigation system using ArUco markers, OpenCV, and ROS on TurtleBot3.</li>
+                <li>Enabled real-time localization for navigation in dynamic and unknown environments.</li>
             </ul>
         </div>
     </section>
@@ -55,82 +129,79 @@
         <h2>Projects</h2>
         <div class="project-item">
             <h3>Autonomous Six-Wheeled Rover Development</h3>
-            <p><strong>Dec 23 - Present</strong></p>
+            <p><strong>Dec 2023 – Present</strong></p>
             <ul>
-                <li>Designed a 6-wheel rover with triple bogie suspension for steep incline navigation (up to 45°).</li>
+                <li>Designed a 6-wheel rover with triple bogie suspension for 45° slope climbing.</li>
                 <li>Integrated Jetson Nano, RealSense Depth Camera, and GPS for real-time autonomous navigation.</li>
             </ul>
         </div>
         <div class="project-item">
             <h3>Omnidirectional-Mobile Manipulator</h3>
-            <p><strong>Sep 23 - Feb 24</strong></p>
+            <p><strong>Sep 2023 – Feb 2024</strong></p>
             <ul>
-                <li>Developed pick-and-place system on an omnidirectional robot using RPi camera and C++ inverse kinematics.</li>
-                <li>Designed robotic arm in Fusion360 using Herkulex servos for accurate manipulation.</li>
+                <li>Developed a pick-and-place robot using omnidirectional drive and C++ inverse kinematics.</li>
+                <li>Designed arm in Fusion360 using Herkulex servos for high-precision manipulation.</li>
             </ul>
         </div>
         <div class="project-item">
             <h3>Metal Alloy Optimization Using FEA</h3>
-            <p><strong>Jan 24 - Apr 24</strong></p>
+            <p><strong>Jan 2024 – Apr 2024</strong></p>
             <ul>
-                <li>Simulated and optimized mechanical and thermal behavior of metal alloys using ANSYS Workbench.</li>
-                <li>Applied stress, deformation, and thermal analysis to improve performance for aerospace and automotive use.</li>
+                <li>Simulated thermal and mechanical behavior of advanced alloys using ANSYS Workbench.</li>
+                <li>Applied FEA to enhance aerospace and automotive alloy performance.</li>
             </ul>
         </div>
         <div class="project-item">
             <h3>Smart Self-Healing Polymer Coating</h3>
-            <p><strong>Jan 24 - Apr 24</strong></p>
+            <p><strong>Jan 2024 – Apr 2024</strong></p>
             <ul>
-                <li>Engineered coatings with microcapsules for autonomous crack healing.</li>
-                <li>Integrated conductive graphite for real-time crack detection and mechanical restoration alerts.</li>
+                <li>Created polymer coating with microcapsules for autonomous crack repair.</li>
+                <li>Integrated conductive graphite for real-time crack detection and strength recovery monitoring.</li>
             </ul>
         </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <p><strong>BTech in Metallurgical and Materials Engineering</strong>, Visvesvaraya National Institute of Technology (VNIT), India (2022–2026)</p>
+        <p><strong>BTech in Metallurgical and Materials Engineering</strong><br>Visvesvaraya National Institute of Technology (VNIT), India (2022–2026)</p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li><strong>Programming Languages:</strong> C, C++, Python</li>
-            <li><strong>Libraries:</strong> NumPy, OpenCV, TensorFlow, PyTorch, Scikit-learn</li>
-            <li><strong>Tools/Software:</strong> ROS, MATLAB, Docker, Gazebo, Git, Fusion360, ANSYS, DSA</li>
+            <li><strong>Libraries:</strong> Numpy, OpenCV, TensorFlow, PyTorch, Scikit-learn</li>
+            <li><strong>Tools & Software:</strong> ROS, MATLAB, Docker, Gazebo, GIT, Fusion360, ANSYS</li>
         </ul>
     </section>
 
     <section id="achievements">
         <h2>Achievements</h2>
         <ul>
-            <li><strong>Patent Application (In Process):</strong> Novel fan design for renewable energy project.</li>
-            <li><strong>GUJCOST 4.0 Robotics Competition:</strong> Finalist and winner of ₹2.5 Lakhs for autonomous robot.</li>
-            <li><strong>Project Funding:</strong> Awarded ₹60,000 for innovative renewable energy system using custom-designed fan.</li>
+            <li><strong>Patent Application (In Process):</strong> Fan-based energy generation innovation for renewable energy.</li>
+            <li><strong>Finalist – GUJCOST 4.0 Robotics Competition:</strong> ₹2.5 Lakhs prize for autonomous robot with voice navigation.</li>
+            <li><strong>Project Funding:</strong> ₹60,000 for high-efficiency fan design in renewable energy system, simulated using ANSYS.</li>
         </ul>
     </section>
 
-    <section id="extra-curricular">
+    <section id="extra">
         <h2>Extra-Curricular</h2>
         <div class="extra-item">
-            <h3>IvLabs - Robotics & AI Community, VNIT</h3>
-            <p>Event Head and active contributor in domains including Computer Vision, Localization, and Drone Control.</p>
+            <h3>Member & Event Head - IvLabs (VNIT Robotics & AI Community)</h3>
+            <p>Involved in CV, Navigation, and Drone Control projects; leading technical events.</p>
         </div>
         <div class="extra-item">
-            <h3>IEEE Workshop Organizer</h3>
-            <p>Organized 4+ robotics workshops in collaboration with IEEE and IvLabs over 3 years.</p>
+            <h3>Workshop Organizer - IEEE VNIT Student Branch</h3>
+            <p>Conducted 4+ hands-on robotics workshops in collaboration with IEEE and IvLabs over 3 years.</p>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <ul>
-            <li>Email: <a href="mailto:koyaneniyaswanth@gmail.com">koyaneniyaswanth@gmail.com</a></li>
-            <li>Phone: <a href="tel:+918074206162">+91-8074206162</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/koyaneni-yaswanth" target="_blank">koyaneni-yaswanth</a></li>
-            <li>GitHub: <a href="https://github.com/koyaneni-yaswanth" target="_blank">koyaneni-yaswanth</a></li>
-            <li>Portfolio: <a href="#">Click to view Portfolio</a></li>
-        </ul>
+        <p>Email: <a href="mailto:koyaneniyaswanth@gmail.com">koyaneniyaswanth@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918074206162">+91 8074206162</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/koyaneni-yaswanth" target="_blank">koyaneni-yaswanth</a></p>
+        <p>GitHub: <a href="https://github.com/koyaneni-yaswanth" target="_blank">koyaneni-yaswanth</a></p>
     </section>
 
     <footer>
