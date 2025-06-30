@@ -1,257 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Koyaneni Yaswanth | Robotics Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(120deg, #1f4037, #99f2c8);
-            color: #ffffff;
-            overflow-x: hidden;
-            animation: fadeInBody 2s ease-in-out;
-        }
-        header {
-            padding: 30px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            animation: slideDown 1s ease-in-out;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        nav ul li a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: 0.3s ease;
-        }
-        nav ul li a:hover {
-            background-color: #ffcc00;
-            color: #000;
-        }
-        .hero {
-            text-align: center;
-            margin-top: 30px;
-            animation: zoomIn 2s ease-in-out;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            animation: fadeInLeft 2s ease-in-out;
-        }
-        .hero p {
-            font-size: 1.4rem;
-            animation: fadeInRight 2s ease-in-out;
-        }
-        .resume-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #ffcc00;
-            color: #000;
-            font-weight: 600;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .resume-button:hover {
-            background-color: #e6b800;
-        }
-        section {
-            background: rgba(0, 0, 0, 0.6);
-            margin: 40px;
-            padding: 30px;
-            border-radius: 15px;
-            animation: fadeInSection 1.5s ease-in-out;
-        }
-        h2 {
-            font-size: 1.8rem;
-            color: #ffcc00;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #ffcc00;
-            padding-bottom: 10px;
-        }
-        ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #ffcc00;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .photo-placeholder, .experience-image, .responsive-image {
-            border-radius: 10px;
-            border: 2px solid #ffcc00;
-            margin-bottom: 20px;
-        }
-        .responsive-image {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-        }
-        /* Animations */
-        @keyframes fadeInBody {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideDown {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes fadeInLeft {
-            from { transform: translateX(-100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes fadeInRight {
-            from { transform: translateX(100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes zoomIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-        @keyframes fadeInSection {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koyaneni Yaswanth | Robotics Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #1f4037, #99f2c8);
+      color: #ffffff;
+      overflow-x: hidden;
+      animation: fadeInBody 2s ease-in-out;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    header {
+      padding: 30px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      animation: slideDown 1s ease-in-out;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav ul li a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #ffcc00;
+      color: #000;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 30px;
+      animation: zoomIn 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeInLeft 2s ease-in-out;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      animation: fadeInRight 2s ease-in-out;
+    }
+    .resume-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .resume-button:hover {
+      background-color: #e6b800;
+    }
+    section {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 40px;
+      padding: 30px;
+      border-radius: 15px;
+      animation: fadeInSection 1.5s ease-in-out;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #ffcc00;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #ffcc00;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .photo-placeholder, .experience-image, .responsive-image {
+      border-radius: 10px;
+      border: 2px solid #ffcc00;
+      margin-bottom: 20px;
+    }
+    .responsive-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .video-container {
+      position: relative;
+      padding-top: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 2px solid #ffcc00;
+      margin-top: 20px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #ffcc00;
+      color: black;
+      cursor: pointer;
+      padding: 12px;
+      border-radius: 50%;
+    }
+    #topBtn:hover {
+      background-color: #e6b800;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Animations */
+    @keyframes fadeInBody { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeInLeft { from { transform: translateX(-100px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes fadeInRight { from { transform: translateX(100px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes zoomIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    @keyframes fadeInSection { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#extra-curricular">Extra-Curricular</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Koyaneni Yaswanth</h1>
-            <p>Robotics Engineer | Researcher | Innovator</p>
-            <a class="resume-button" href="https://drive.google.com/file/d/1qTZb1LjlRmj_LHAe5z14xigFLbqGVNvC/view?usp=sharing" target="_blank">📄 Download Resume</a>
-        </div>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#extra-curricular">Extra-Curricular</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Koyaneni Yaswanth</h1>
+      <p>Robotics Engineer | Researcher | Innovator</p>
+      <a class="resume-button" href="https://drive.google.com/uc?export=download&id=1qTZb1LjlRmj_LHAe5z14xigFLbqGVNvC" download target="_blank">📄 Download Resume (PDF)</a>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/photo%20portifolio.JPG" alt="About Me" class="responsive-image"/>
-        <p>Hi, I’m Koyaneni Yaswanth, currently pursuing a BTech in Metallurgical and Materials Engineering at VNIT, India. I’m passionate about robotics, autonomous navigation, wearable sensors, and AI-driven innovations.</p>
-    </section>
+  <!-- Other Sections: About, Experience, Projects (including Genesis project) -->
 
-    <section id="experience">
-        <h2>Experience</h2>
+  <section id="showcase">
+    <h2>Demo Showcase 🎥</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/g_7jvnX-ehE" 
+        title="Genesis Autonomous Rover Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-        <div class="experience-item">
-            <h3>🌏 International Research Internship — PSU, Thailand</h3>
-            <p><strong>May 2025 – Present</strong></p>
-            <ul>
-                <li>Researching <strong>wearable biosensors</strong> for real-time health monitoring and signal processing.</li>
-                <li>Designing flexible, low-power electronics for medical and human-interaction applications.</li>
-                <li>Collaborating with an interdisciplinary team to integrate hardware and ML-based diagnostics.</li>
-            </ul>
-        </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:koyaneniyaswanth@gmail.com">koyaneniyaswanth@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918074206162">+91-8074206162</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/koyaneni-yaswanth" target="_blank">linkedin.com/in/koyaneni-yaswanth</a></p>
+    <p>GitHub: <a href="https://github.com/koyaneni-yaswanth" target="_blank">github.com/koyaneni-yaswanth</a></p>
+  </section>
 
-        <div class="experience-item">
-            <h3>🤖 Summer Research Intern — IvLabs, VNIT</h3>
-            <p><strong>Dec 2022 – Mar 2023</strong></p>
-            <ul>
-                <li>Developed a <strong>ROS-based autonomous navigation system</strong> using ArUco markers and OpenCV on TurtleBot3.</li>
-                <li>Achieved <strong>real-time localization</strong> in unknown indoor environments with dynamic path planning.</li>
-                <li>Focused on <strong>application-driven deployment</strong> for smart warehouses and hospital logistics.</li>
-            </ul>
-        </div>
-    </section>
+  <footer>
+    <p>&copy; 2025 Koyaneni Yaswanth. All rights reserved.</p>
+  </footer>
 
-    <section id="projects">
-        <h2>Projects</h2>
+  <button onclick="topFunction()" id="topBtn" title="Back to Top">↑</button>
 
-        <div class="project-item">
-            <h3>Genesis: An Autonomous Rover System</h3>
-            <p><strong>Oct 2024 – Jan 2025</strong></p>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-                <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/IMG_3421.JPG" alt="Genesis Rover Front View" class="photo-placeholder" width="250">
-                <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/IMG_3425.JPG" alt="Genesis Rover Navigation Mode" class="photo-placeholder" width="250">
-                <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/WhatsApp%20Image%202025-02-07%20at%203.54.24%20PM.jpeg" alt="Genesis Rover Side View" class="photo-placeholder" width="250">
-            </div>
-            <ul>
-                <li>Engineered a 6-wheeled rover with a triple bogie suspension for <strong>40° terrain traversal</strong>.</li>
-                <li>Integrated <strong>Jetson Nano</strong>, <strong>RealSense Camera</strong>, and <strong>Arduino Mega</strong> for multi-modal autonomy.</li>
-                <li>Built <strong>voice-controlled interface</strong> using MatchboxNet STT and Jetson Voice.</li>
-                <li>Implemented <strong>GPS + compass navigation</strong> for waypoint tracking.</li>
-                <li>Designed <strong>real-time vision-based obstacle avoidance</strong> using OpenCV.</li>
-                <li>Developed an RF-based GUI control station using <strong>Python + Tkinter</strong>.</li>
-            </ul>
-        </div>
-
-        <!-- Add more projects below like the previous example if needed -->
-
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>BTech in Metallurgical and Materials Engineering</strong><br>Visvesvaraya National Institute of Technology (VNIT), India (2022 – 2026)</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> C, C++, Python</li>
-            <li><strong>Libraries:</strong> Numpy, OpenCV, TensorFlow, PyTorch, Scikit-learn</li>
-            <li><strong>Tools:</strong> ROS, MATLAB, Docker, Gazebo, Git, Fusion360, ANSYS</li>
-        </ul>
-    </section>
-
-    <section id="extra-curricular">
-        <h2>Extra-Curricular</h2>
-        <div class="extra-item">
-            <h3>IvLabs – Robotics & AI Community</h3>
-            <p>Worked on Computer Vision, Localization, Navigation, and Drone Control projects. Served as Event Head.</p>
-        </div>
-        <div class="extra-item">
-            <h3>IEEE VNIT Student Branch</h3>
-            <p>Organized 4+ robotics workshops in collaboration with IEEE and IvLabs over 3 years.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:koyaneniyaswanth@gmail.com">koyaneniyaswanth@gmail.com</a></p>
-        <p>Phone: <a href="tel:+918074206162">+91-8074206162</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/koyaneni-yaswanth" target="_blank">linkedin.com/in/koyaneni-yaswanth</a></p>
-        <p>GitHub: <a href="https://github.com/koyaneni-yaswanth" target="_blank">github.com/koyaneni-yaswanth</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Koyaneni Yaswanth. All rights reserved.</p>
-    </footer>
+  <script>
+    window.onscroll = function() {
+      document.getElementById("topBtn").style.display =
+        (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+          ? "block"
+          : "none";
+    };
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
