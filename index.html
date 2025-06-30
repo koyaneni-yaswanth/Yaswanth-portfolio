@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Koyaneni Yaswanth | Robotics Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
     <style>
         * {
             box-sizing: border-box;
@@ -56,6 +56,21 @@
             font-size: 1.4rem;
             animation: fadeInRight 2s ease-in-out;
         }
+        .resume-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .resume-button:hover {
+            background-color: #e6b800;
+        }
         section {
             background: rgba(0, 0, 0, 0.6);
             margin: 40px;
@@ -99,19 +114,6 @@
             padding: 20px;
             background: rgba(0, 0, 0, 0.7);
         }
-        .video-container {
-            position: relative;
-            padding-top: 56.25%;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
         /* Animations */
         @keyframes fadeInBody {
             from { opacity: 0; }
@@ -155,30 +157,36 @@
         <div class="hero">
             <h1>Koyaneni Yaswanth</h1>
             <p>Robotics Engineer | Researcher | Innovator</p>
+            <a class="resume-button" href="https://drive.google.com/file/d/1qTZb1LjlRmj_LHAe5z14xigFLbqGVNvC/view?usp=sharing" target="_blank">📄 Download Resume</a>
         </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/photo%20portifolio.JPG" alt="About Me" class="responsive-image">
+        <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/photo%20portifolio.JPG" alt="About Me" class="responsive-image"/>
         <p>Hi, I’m Koyaneni Yaswanth, currently pursuing a BTech in Metallurgical and Materials Engineering at VNIT, India. I’m passionate about robotics, autonomous navigation, wearable sensors, and AI-driven innovations.</p>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
+
         <div class="experience-item">
-            <h3>International Research Internship - PSU, Thailand</h3>
-            <p><strong>May 25 – Present</strong></p>
+            <h3>🌏 International Research Internship — PSU, Thailand</h3>
+            <p><strong>May 2025 – Present</strong></p>
             <ul>
-                <li>Focused on the development of wearable sensors and their applications.</li>
+                <li>Researching <strong>wearable biosensors</strong> for real-time health monitoring and signal processing.</li>
+                <li>Designing flexible, low-power electronics for medical and human-interaction applications.</li>
+                <li>Collaborating with an interdisciplinary team to integrate hardware and ML-based diagnostics.</li>
             </ul>
         </div>
+
         <div class="experience-item">
-            <h3>Summer Research Internship - IvLabs, VNIT</h3>
-            <p><strong>Dec 22 – Mar 23</strong></p>
+            <h3>🤖 Summer Research Intern — IvLabs, VNIT</h3>
+            <p><strong>Dec 2022 – Mar 2023</strong></p>
             <ul>
-                <li>Developed and deployed autonomous navigation using ArUco markers, OpenCV, and ROS on TurtleBot3.</li>
-                <li>Enabled real-time localization in unknown environments for warehouse and healthcare applications.</li>
+                <li>Developed a <strong>ROS-based autonomous navigation system</strong> using ArUco markers and OpenCV on TurtleBot3.</li>
+                <li>Achieved <strong>real-time localization</strong> in unknown indoor environments with dynamic path planning.</li>
+                <li>Focused on <strong>application-driven deployment</strong> for smart warehouses and hospital logistics.</li>
             </ul>
         </div>
     </section>
@@ -191,46 +199,21 @@
             <p><strong>Oct 2024 – Jan 2025</strong></p>
             <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
                 <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/IMG_3421.JPG" alt="Genesis Rover Front View" class="photo-placeholder" width="250">
-                <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/IMG_7108.JPG" alt="Genesis Rover Side View" class="photo-placeholder" width="250">
                 <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/IMG_3425.JPG" alt="Genesis Rover Navigation Mode" class="photo-placeholder" width="250">
+                <img src="https://raw.githubusercontent.com/koyaneni-yaswanth/Yaswanth-portfolio/main/WhatsApp%20Image%202025-02-07%20at%203.54.24%20PM.jpeg" alt="Genesis Rover Side View" class="photo-placeholder" width="250">
             </div>
             <ul>
-                <li>Designed and implemented a six-wheeled autonomous rover system with a triple bogie suspension for extreme terrain traversal, capable of climbing slopes up to 40° with enhanced stability.</li>
-                <li>Integrated <strong>NVIDIA Jetson Nano</strong>, <strong>Intel RealSense Depth Camera</strong>, and <strong>Arduino Mega</strong> for multi-modal control systems.</li>
-                <li><strong>Voice-Based Control:</strong> Built with <strong>Jetson Voice</strong> using the MatchboxNet STT model for real-time voice command interpretation and execution.</li>
-                <li><strong>GPS-Guided Navigation:</strong> Implemented GPS and digital compass integration for waypoint tracking and global positioning.</li>
-                <li><strong>Obstacle Avoidance:</strong> Leveraged RealSense camera’s depth feed with OpenCV to detect and avoid obstacles using vision-based real-time path planning.</li>
-                <li><strong>Wireless Communication:</strong> Developed a custom RF communication protocol using a base station GUI (Tkinter + Python) for remote control and live telemetry.</li>
-                <li><strong>System Integration:</strong> Engineered seamless switching between voice, manual, GPS, and obstacle-based navigation using an efficient communication framework.</li>
-                <li><strong>Tools & Technologies:</strong> Python, OpenCV, Embedded C, Docker, Jetson Nano, RealSense SDK, Arduino IDE, Vim, Tkinter GUI, RF Modules.</li>
+                <li>Engineered a 6-wheeled rover with a triple bogie suspension for <strong>40° terrain traversal</strong>.</li>
+                <li>Integrated <strong>Jetson Nano</strong>, <strong>RealSense Camera</strong>, and <strong>Arduino Mega</strong> for multi-modal autonomy.</li>
+                <li>Built <strong>voice-controlled interface</strong> using MatchboxNet STT and Jetson Voice.</li>
+                <li>Implemented <strong>GPS + compass navigation</strong> for waypoint tracking.</li>
+                <li>Designed <strong>real-time vision-based obstacle avoidance</strong> using OpenCV.</li>
+                <li>Developed an RF-based GUI control station using <strong>Python + Tkinter</strong>.</li>
             </ul>
         </div>
 
-        <div class="project-item">
-            <h3>Omnidirectional Mobile Manipulator</h3>
-            <p><strong>Sep 23 – Feb 24</strong></p>
-            <ul>
-                <li>Developed a pick-and-place robot using RPi camera, inverse kinematics in C++, and Herkulex servos.</li>
-                <li>Designed arm in Fusion360 with precision object detection and manipulation.</li>
-            </ul>
-        </div>
+        <!-- Add more projects below like the previous example if needed -->
 
-        <div class="project-item">
-            <h3>Metal Alloy Optimization using FEA</h3>
-            <p><strong>Jan 24 – Apr 24</strong></p>
-            <ul>
-                <li>Simulated alloy behavior using ANSYS Workbench to reduce experimental costs.</li>
-                <li>Performed stress, deformation, and thermal analyses for high-performance applications.</li>
-            </ul>
-        </div>
-
-        <div class="project-item">
-            <h3>Smart Self-Healing Polymer Coating</h3>
-            <p><strong>Jan 24 – Apr 24</strong></p>
-            <ul>
-                <li>Engineered microcapsule-based coating for autonomous crack repair and real-time detection using graphite conductivity.</li>
-            </ul>
-        </div>
     </section>
 
     <section id="education">
@@ -251,7 +234,7 @@
         <h2>Extra-Curricular</h2>
         <div class="extra-item">
             <h3>IvLabs – Robotics & AI Community</h3>
-            <p>Working on Computer Vision, Localization, Navigation, and Drone Control projects. Served as Event Head.</p>
+            <p>Worked on Computer Vision, Localization, Navigation, and Drone Control projects. Served as Event Head.</p>
         </div>
         <div class="extra-item">
             <h3>IEEE VNIT Student Branch</h3>
